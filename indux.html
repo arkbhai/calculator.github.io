@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 36px;
+      margin-top: 25px;
+      margin-right: 350px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      padding: 15px 0px;
+      float: right;   
+    }
+    input[type="text"] {
+      width: 70%;
+      height: 60px;
+      font-size: 36px;
+      text-align: right;
+      margin-bottom: 0px;
+      border: 2px solid rgb(13, 126, 28);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    input[type="button"] {
+      width: 100px;
+      height: 60px;
+      font-size: 32px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 5 199 5px #ee0000;
+    }
+    input[type="button"]:hover {
+      background-color: #3a8d3c;
+      border: 2px solid rgb(125, 187, 11);
+    }   
+    .bk { width: 217px !important;
+    }
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        float: left;
+        width: 15%;
+        text-align: left;
+     }      
+      td {
+        border: 1px solid black;
+        padding: 3px 6px;
+      }
+  </style>
+</head>
+<body>
+    <div class="calculator">
+    <input type="text" id="display" />
+    <br /><br />
+    <input type="button" value="1" onclick="document.getElementById('display').value+='1'" />
+    <input type="button" value="2" onclick="document.getElementById('display').value+='2'" />
+    <input type="button" value="3" onclick="document.getElementById('display').value+='3'" />
+    <input type="button" value="+" onclick="document.getElementById('display').value+='+'" />
+    <br />
+    <input type="button" value="4" onclick="document.getElementById('display').value+='4'" />
+    <input type="button" value="5" onclick="document.getElementById('display').value+='5'" />
+    <input type="button" value="6" onclick="document.getElementById('display').value+='6'" />
+    <input type="button" value="-" onclick="document.getElementById('display').value+='-'" />
+        <br />
+    <input type="button" value="7" onclick="document.getElementById('display').value+='7'" />
+    <input type="button" value="8" onclick="document.getElementById('display').value+='8'" />
+    <input type="button" value="9" onclick="document.getElementById('display').value+='9'" />
+    <input type="button" value="*" onclick="document.getElementById('display').value+='*'" />
+    <br />
+    <input type="button" value="C" onclick="document.getElementById('display').value=''" />
+    <input type="button" value="0" onclick="document.getElementById('display').value+='0'" />
+    <input type="button" value="." onclick="document.getElementById('display').value+='.'" />
+    
+    <input type="button" value="/" onclick="document.getElementById('display').value+='/'" />
+    <br />
+    <input class="bk" type="button" value="Back"
+      onclick="document.getElementById('display').value=document.getElementById('display').value.substring(0, document.getElementById('display').value.length-1)" />
+      <input class="bk" type="button" value="="
+      onclick="document.getElementById('display').value=eval(document.getElementById('display').value)" />
+  </div>
+  <div>
+    <H1>Group no: 6</H1>      
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>Roll No</td>
+      </tr>
+      <tr>
+        <td>Ali Raza</td>
+        <td>5049</td>
+      </tr>
+      <tr>
+        <td>Nimra Rizwan</td>
+        <td>5015</td>
+      </tr>
+      <tr>
+        <td>Aatka Anwer</td>
+        <td>5085</td>
+      </tr>
+      <tr>
+        <td>Raza Ali</td>
+        <td>5117</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
